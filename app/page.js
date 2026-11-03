@@ -170,7 +170,7 @@ export default function Dashboard() {
       )}
       {tab === "rolling" && (
         <div style={styles.card}>
-          <div style={styles.cardTitle}>Rolling 6M (WR >= 30%)</div>
+          <div style={styles.cardTitle}>Rolling 6M (WR 30%+)</div>
           {SETUPS.map(s => {
             const status = getRollingStatus(s.id)
             return (
